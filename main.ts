@@ -1,6 +1,6 @@
 // Proxy relais : Inwi → Deno → Worker CF → Cible
 const WORKER_URL = "https://inwi.abdou-benadada.workers.dev";
-const API_KEY = "VOTRE_CLE_API"; // ou "" si pas de clé
+const API_KEY = ""; // ou "" si pas de clé
 
 Deno.serve(async (req) => {
   const url = new URL(req.url);
